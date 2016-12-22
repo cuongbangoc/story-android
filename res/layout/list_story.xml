@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/list_story_backgroud">
+  
+    <ImageView android:id="@+id/headerListStory" android:src="@drawable/header_list_category"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    
+    <TextView 
+        android:id="@+id/catestoryTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        
+        android:textSize="30px" />
+	<ListView android:layout_width="fill_parent" 
+	  android:layout_height="fill_parent" 
+	  android:id="@+id/storyListView">
+	</ListView>
+	 <Button android:text="Back" android:id="@+id/backButton"
+                android:nextFocusUp="@+id/rememberSignupBox" android:nextFocusDown="@+id/usernameSignup"
+                android:textSize="20sp" android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="comebackLogin"></Button>
+</LinearLayout>
